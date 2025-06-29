@@ -1,0 +1,18 @@
+ body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      margin-right: 5px;
+    }
+    input {
+      width: 60px;
+      margin: 0 5px;
+    }
+    .coordenadas {
+      margin-bottom: 10px;
+    }
+    #resultado {
+      margin-top: 10px;
+      font-weight: bold;
+    }

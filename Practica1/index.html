@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Distancia</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+<body>
+    <h1>Calculadora de pendiente de una recta y verificador de paralelismo</h1>
+
+    <form>
+        <p>Ingrese los puntos de la recta a calcular</p>
+        <label for="xa">A: (</label>
+        <input type="number" id="xa" placeholder="X1" required>
+        <label> , </label>
+        <input type="number" id="ya" placeholder="Y1" required>
+        <label>)</label><br><br>
+
+        <label for="xb">B: (</label>
+        <input type="number" id="xb" placeholder="X2" required>
+        <label> , </label>
+        <input type="number" id="yb" placeholder="Y2" required>
+        <label>)</label><br><br>
+
+        <button type="button" id="calcular">Calcular pendiente</button>
+
+        <p>Desea agregar una segunda recta y verificar si son paralelas?</p>
+        <select id="paralelismo">
+            <option value="no">No</option>
+            <option value="si">Si</option>
+        </select><br><br>
+
+        <p style="display: none;" id="texto">Ingrese los puntos de la recta a comparar</p><br><br>
+        <label for="xb" id="c" style="display: none;">C: (</label>
+        <input type="number" style="display: none;" id="xc" placeholder="X3" required>
+        <label style="display: none;" id="comaC"> , </label>
+        <input type="number" style="display: none;" id="yc" placeholder="Y3" required> 
+        <label style="display: none;" id="finC" >)</label><br><br>
+
+        <label for="xb" id="d" style="display: none;">D: (</label>
+        <input type="number" style="display: none;" id="xd" placeholder="X4" required>
+        <label style="display: none;" id="comaD"> , </label>
+        <input type="number" style="display: none;" id="yd" placeholder="Y4" required> 
+        <label style="display: none;" id="finD" >)</label><br><br>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
